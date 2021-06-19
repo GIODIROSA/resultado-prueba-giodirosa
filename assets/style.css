@@ -6,17 +6,17 @@ body {
 
 @font-face {
   font-family: "FuturaStdBold";
-  src: url(./assets/fonts/FuturaStdBold.woff);
+  src: url(fonts/FuturaStdBold.woff);
 }
 
 @font-face {
   font-family: "FuturaStdBoldOblique";
-  src: url(./assets/fonts/FuturaStdBoldOblique.woff);
+  src: url(fonts/FuturaStdBoldOblique.woff);
 }
 
 @font-face {
   font-family: "FuturaStdBook";
-  src: url(./assets/fonts/FuturaStdBook.woff);
+  src: url(fonts/FuturaStdBook.woff);
 }
 
 /* navbar */
@@ -64,7 +64,7 @@ body {
 
 /* banner principal */
 .contenedor__heroSection {
-  background-image: url(./assets/img/header/banner-mobile.jpg);
+  background-image: url(img/header/banner-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -301,12 +301,13 @@ body {
     justify-content: flex-start;
     align-items: center;
     /* revisar esta medida */
-    margin-left: 20px;
+    margin-left: 120px;
   }
 
   .categoria__header {
-    padding: 0px 20px;
+    padding: 5px 20px;
     font-family: "FuturaStdBook";
+    font-size: 1rem;
     color: gray;
     margin: 10px 0px;
   }
@@ -343,6 +344,8 @@ body {
 
   .texto__menuCategoria {
     color: #fff;
+    font-family: "FuturaStdBook";
+
   }
 
   .icono__search {
@@ -363,18 +366,15 @@ body {
     display: none;
   }
 
-  /* arreglar mobile */
   .wrapper__heroSectionMobile {
     display: none;
   }
-
-  /* revisar a los 800 */
 
   .contenedor__heroSectionDesktop {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url(./assets/img/header/banner-header-desktop.jpg);
+    background-image: url(img/header/banner-header-desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -526,7 +526,7 @@ body {
 
   /* titulo lo mejor en movibilidad sostenible */
 
-  .contenedor__tituloMovildadSostenible{
+  .contenedor__tituloMovildadSostenible {
     margin-top: 100px;
   }
 
@@ -535,12 +535,11 @@ body {
     font-family: "FuturaStdBold";
     color: gold;
   }
-  
+
   .texto__movilidadSostenible {
     font-family: "FuturaStdBook";
     color: purple;
   }
-  
 }
 
 /* @media (min-width: 1200px) {
