@@ -105,7 +105,9 @@ h5 {
 .contenedor__verEspeciales,
 .contenedor__categorias,
 .ripley__navbarDesktop,
-.wrapper__heroSectionDesktop {
+.contenedor__heroSectionDesktop,
+.contenedor__tituloContenidoDesktop,
+.contenedor__bannerCarousel {
   display: none;
 }
 
@@ -158,7 +160,86 @@ h5 {
 
   /* banner- hero section */
 
+  .contenedor__heroSection {
+    display: none;
+  }
+
+  /* arreglar mobile */
   .wrapper__heroSectionMobile {
     display: none;
+  }
+
+  /* revisar a los 800 */
+
+  .contenedor__heroSectionDesktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: orchid;
+    height: 550px;
+  }
+
+  .heroSection__imgDesktop {
+    width: 150px;
+    height: 250px;
+    background: aqua;
+  }
+
+  .heroSection__electroMovilidad {
+    width: 300px;
+  }
+
+  .electroMovilidad__botonera {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contenedor__botonera {
+    display: none;
+  }
+
+  /* titulo contenido */
+  .contenedor__tituloContenido {
+    display: none;
+  }
+
+  .contenedor__tituloContenidoDesktop {
+    display: block;
+  }
+
+  .contenedor__tituloContenidoDesktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+  }
+
+  /* banner interno scooter y primer carousel mobile*/
+
+  .contenedor__bannerInternoScooters,
+  .contenedor__firstCarousel {
+    display: none;
+  }
+
+  /* section con banner y primer carousel Desktop*/
+
+  .contenedor__bannerCarousel{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+  }
+
+  .banner__imgScooter {
+    width: 250px;
+    height: 300px;
+    background: orange;
+  }
+
+  .contenedor__carouselPrimeroDesktop {
+    width: 250px;
+    height: 300px;
+    background: salmon;
   }
 }
