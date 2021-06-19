@@ -92,12 +92,11 @@ body {
   align-items: flex-start;
 }
 
-.logo__electromovilidad{
+.logo__electromovilidad {
   position: relative;
   align-self: flex-start;
   right: 50px;
 }
-
 
 .texto__mueveteSustentable {
   position: relative;
@@ -279,7 +278,7 @@ body {
 /*+++ carousel+++ */
 
 .contenedor__secondCarousel {
-  width: 80%;
+  width: 70%;
   margin: 0px auto;
 }
 .carousel__contenedor {
@@ -299,7 +298,6 @@ body {
   text-align: center;
   background: none;
   color: #000;
- 
 }
 
 .carousel__anterior:hover,
@@ -308,11 +306,11 @@ body {
 }
 
 .carousel__anterior {
-  left: -20px;
+  left: -40px;
 }
 
 .carousel__siguiente {
-  right: -20px;
+  right: -40px;
 }
 
 .carousel__lista {
@@ -332,13 +330,34 @@ body {
   border-radius: 0;
 } */
 
-.carousel__indicadores .glider-dot:hover {
+.carousel__elemento {
+  background: #fece0c;
+  /* border: 2px solid #fff; */
+}
+
+.texto__precioCarouselFooter {
+  font-family: "FuturaStdBold";
+  font-size: 25px;
+}
+
+.contenedor__loQuiero {
+  margin: 30px;
+  border: 2px solid #000;
+}
+
+.texto__loQuiero {
+  font-family: "FuturaStdBold";
+
+  font-size: 1rem;
+}
+
+/* .carousel__indicadores .glider-dot:hover {
   opacity: 0.5;
 }
 
 .carousel__indicadores .glider-dot.active {
   opacity: 1;
-}
+} */
 
 @media (min-width: 1020px) {
   /* header inicial */
@@ -607,65 +626,31 @@ body {
     color: purple;
   }
 
+  /* carousel */
+
+  .contenedor__secondCarousel {
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  .carousel__elemento {
+    background: #fece0c;
+    border: 4px solid #fff;
+  }
+
   /* carousel arrow */
 
   .carousel__anterior {
-    left: -50px;
+    left: -40px;
   }
-  
+
   .carousel__siguiente {
-    right: -50px;
+    right: -40px;
   }
+
+  
+  
+  
+  
 }
 
-/* @media (min-width: 1200px) {
-  .titulo__mueveteSustentable {
-    font-family: "FuturaStdBold";
-    width: 500px;
-    padding-left: 100px;
-    font-size: 1.875rem;
-  }
-
-  .text__sustentableDesktop {
-    color: gold;
-    font-family: "FuturaStdBoldOblique";
-  }
-
-  .titulo__mueveteSustentable {
-    font-family: "FuturaStdBold";
-    width: 500px;
-    padding-left: 100px;
-    font-size: 1.875rem;
-    color: #fff;
-  }
-
-  .electroMovilidad__btnVerTodoElectromovilidad {
-    width: 300px;
-    border: 4px solid gold;
-    margin-left: 100px;
-    padding: 10px;
-  }
-
-  .titulo__verTodoElectromovilidad {
-    font-family: "FuturaStdBold";
-    color: gold;
-    text-align: center;
-    margin: 0px;
-    font-size: 16px;
-  }
-
-  .electroMovilidad__subtitulo {
-    margin: 40px 0px;
-  }
-
-  .electroMovilidad__botonera {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 500px;
-    margin-left: 100px;
-    margin-top: 80px;
-  }
-
-  
-} */
