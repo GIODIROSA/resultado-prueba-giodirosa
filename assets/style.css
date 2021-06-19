@@ -75,7 +75,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .heroSection__img {
@@ -88,31 +88,33 @@ body {
   height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
-.logo__electromovilidad {
+.logo__electromovilidad{
   position: relative;
-  max-width: 100%;
+  align-self: flex-start;
   right: 50px;
 }
 
+
 .texto__mueveteSustentable {
   position: relative;
-  padding: 0px 50px;
+  /* padding: 0px 50px; */
 }
 
 /* span de texto */
 .texto__muevete {
   color: #fff;
-  font-size: 1.5625rem;
+  font-size: 1.3rem;
   font-family: "FuturaStdBold";
 }
 
 .texto__sustentable {
   color: gold;
   padding-left: 20px;
-  font-size: 1.5625rem;
+  font-size: 1.2rem;
 
   font-family: "FuturaStdBoldOblique";
 }
@@ -235,7 +237,8 @@ body {
 
 .backgroundGris {
   height: 100px;
-  width: 100%;
+  width: 98%;
+  margin: 0px auto;
   background: gainsboro;
 }
 
@@ -273,7 +276,71 @@ body {
   display: none;
 }
 
-@media (min-width: 1000px) {
+/*+++ carousel+++ */
+
+.contenedor__secondCarousel {
+  width: 80%;
+  margin: 0px auto;
+}
+.carousel__contenedor {
+  position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: #000;
+ 
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+  opacity: 100%;
+}
+
+.carousel__anterior {
+  left: -20px;
+}
+
+.carousel__siguiente {
+  right: -20px;
+}
+
+.carousel__lista {
+  overflow: hidden;
+}
+
+.carousel__elemento {
+  text-align: center;
+}
+
+/* .carousel__indicadores .glider-dot {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #000;
+  opacity: 0.2;
+  border-radius: 0;
+} */
+
+.carousel__indicadores .glider-dot:hover {
+  opacity: 0.5;
+}
+
+.carousel__indicadores .glider-dot.active {
+  opacity: 1;
+}
+
+@media (min-width: 1020px) {
   /* header inicial */
   .contenedor__verEspeciales {
     display: block;
@@ -345,7 +412,6 @@ body {
   .texto__menuCategoria {
     color: #fff;
     font-family: "FuturaStdBook";
-
   }
 
   .icono__search {
@@ -539,6 +605,16 @@ body {
   .texto__movilidadSostenible {
     font-family: "FuturaStdBook";
     color: purple;
+  }
+
+  /* carousel arrow */
+
+  .carousel__anterior {
+    left: -50px;
+  }
+  
+  .carousel__siguiente {
+    right: -50px;
   }
 }
 
