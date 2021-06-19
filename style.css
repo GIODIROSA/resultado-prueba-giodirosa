@@ -4,10 +4,27 @@ body {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "FuturaStdBold";
+  src: url(./assets/fonts/FuturaStdBold.woff);
+}
+
+@font-face {
+  font-family: "FuturaStdBoldOblique";
+  src: url(./assets/fonts/FuturaStdBoldOblique.woff);
+}
+
+@font-face {
+  font-family: "FuturaStdBook";
+  src: url(./assets/fonts/FuturaStdBook.woff);
+}
+
 /* quitar */
 h5 {
   color: orange;
+  font-family: "FuturaStdBold";
 }
+
 /* navbar */
 .ripley__navbar {
   background: #000;
@@ -51,6 +68,7 @@ h5 {
   padding-left: 30px;
 }
 
+/* banner principal */
 .contenedor__heroSection {
   background-image: url(./assets/img/header/banner-mobile.jpg);
   background-repeat: no-repeat;
@@ -59,11 +77,11 @@ h5 {
   height: 550px;
 }
 
-.wrapper__heroSectionMobile{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+.wrapper__heroSectionMobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
 .heroSection__img {
@@ -71,37 +89,44 @@ h5 {
   width: 180px;
 }
 
-.heroSection__title{
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.heroSection__title {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.logo__electromovilidad{
-    position: relative;
-    right: 50px;
+.logo__electromovilidad {
+  position: relative;
+  right: 50px;
 }
 
-.texto__mueveteSustentable{
-    position: relative;
+.texto__mueveteSustentable {
+  position: relative;
   padding: 0px 50px;
 }
 
-.contenedor_verTodoElectromovilidad{
-    text-align: center;
-    border: 4px solid gold;
-    margin: 0px 50px;
+.contenedor_verTodoElectromovilidad {
+  text-align: center;
+  border: 4px solid gold;
+  margin: 0px 50px;
 }
 
-
+/* span de texto */
 .texto__muevete {
   color: #fff;
+  font-family: "FuturaStdBold";
 }
 
 .texto__sustentable {
   color: gold;
   padding-left: 20px;
+  font-family: "FuturaStdBoldOblique";
+}
+
+.texto__verTodoElectromovilidad {
+  font-family: "FuturaStdBold";
+  color: gold;
 }
 
 .ripley__heroSection {
@@ -121,20 +146,70 @@ h5 {
 .btn__moto {
   background: olivedrab;
   width: 100%;
+  height: 120px;
 }
 
 .btn__bicicletas,
 .btn__accesorios {
   background: orangered;
   width: 100%;
+  height: 120px;
+}
+
+.icon__scooter,
+.icon__bicicleta,
+.icon__moto,
+.icon__accesorio {
+  max-width: 100%;
+  padding-top: 20px;
+}
+
+.btn__scooters,
+.btn__bicicletas,
+.btn__moto,
+.btn__accesorios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.texto_categoria {
+  text-align: center;
+  font-family: "FuturaStdBold";
+  font-size: 14PX;
+  color: #fff;
+}
+
+/* titulo/contenido */
+
+.contenedor__tituloContenido{
+  margin: 30px;
+}
+
+.tituloContenido__titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.contenido__scooterElectrico{
+  margin: 0px;
+  padding: 0px 20px;
+  text-align: center;
+  font-family: "FuturaStdBold";
 }
 
 /* banner interno-scooters */
-.banner__img {
-  height: 100px;
-  background: goldenrod;
+.banner__img{
   width: 90%;
   margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner__interno{
+  max-width: 100%;
 }
 
 /* primer carousel-scooter uno */
@@ -169,7 +244,19 @@ h5 {
 /* titulo-Lo mejor en movilidad sostenible */
 .movilidadSostenible__titulo {
   text-align: center;
-  margin-bottom: 50px;
+  margin: 30px 0px;
+}
+
+.texto__loMejorEn{
+  font-size: 30px;
+  font-family: "FuturaStdBold";
+  color: gold;
+}
+
+.texto__movilidadSostenible{
+  font-family: "FuturaStdBook";
+  color: purple;
+
 }
 
 /* segundo carousel-scooter dos */
