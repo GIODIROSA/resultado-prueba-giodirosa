@@ -212,33 +212,32 @@ body {
 }
 
 /* primer carousel-scooter uno */
-.contenedor__firstCarousel {
-  position: relative;
-}
 
-.contenedor__carouselPrimeroScooter {
-  background: aqua;
-  height: 350px;
-  width: 90%;
-  position: absolute;
-  left: 20px;
-  right: 20px;
-}
-
-.contenedor__background {
-  height: 380px;
-  background: #fff;
+.banner__carousel {
   display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
-.backgroundGris {
-  height: 100px;
-  width: 98%;
-  margin: 0px auto;
-  background: gainsboro;
+/* .banner__derecho {
+  background: purple;
+  width: 50%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.banner__scooter{
+  max-width: 100%;
+  width: 500px;
+} */
+
+.carousel__izquierdo {
+  /* background: gold; */
+  width: 50%;
+  /* height: 550px; */
+  margin: 0px 50px;
 }
 
 /* titulo-Lo mejor en movilidad sostenible */
@@ -271,11 +270,40 @@ body {
 .ripley__navbarDesktop,
 .contenedor__heroSectionDesktop,
 .contenedor__tituloContenidoDesktop,
-.contenedor__bannerCarousel {
+.banner__derecho {
   display: none;
 }
 
 /*+++ carousel+++ */
+
+.carouselDos {
+  width: 100%;
+  /* background: gray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.borde {
+  border: 4px solid #fff;
+}
+
+.img__carouselDos {
+  max-width: 100%;
+  width: 100%;
+  background-color: #fece0c;
+}
+
+.img__carouselUno {
+  width: 100%;
+}
+
+.contenedorImgCarouselUno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
 
 .contenedor__secondCarousel {
   width: 70%;
@@ -321,23 +349,55 @@ body {
   text-align: center;
 }
 
-/* .carousel__indicadores .glider-dot {
-  display: block;
-  width: 30px;
-  height: 4px;
-  background: #000;
-  opacity: 0.2;
-  border-radius: 0;
-} */
-
 .carousel__elemento {
   background: #fece0c;
-  /* border: 2px solid #fff; */
+}
+
+.contenedor__precio {
+  height: 50px;
+  background: #fece0c;
 }
 
 .texto__precioCarouselFooter {
   font-family: "FuturaStdBold";
   font-size: 25px;
+  text-align: center;
+  margin: 0px;
+  background: #fece0c;;
+}
+
+.texto__precioCarouselMedio{
+  font-family: "FuturaStdBold";
+  font-size: 25px;
+  text-align: center;
+  margin: 0px;
+
+}
+
+.contenedor__loquiero {
+  width: 100%;
+}
+
+.texto__loquiero {
+  border: 2px solid #000;
+  font-family: "FuturaStdBold";
+  background: gold;
+  margin: 0px;
+  padding: 20px;
+  text-align: center;
+}
+
+.textoVerProducto {
+  border: 2px solid #000;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.verProducto {
+  font-family: "FuturaStdBold";
 }
 
 .contenedor__loQuiero {
@@ -434,7 +494,7 @@ body {
   }
 
   .icono__search {
-    padding: 0.75rem 7.625rem;
+    /* padding: 0.75rem 7.625rem; */
     border-radius: 60px;
     border: 1px solid #000;
   }
@@ -589,24 +649,37 @@ body {
 
   /* section con banner y primer carousel Desktop*/
 
-  .contenedor__bannerCarousel {
+  .banner__carousel {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    width: 100%;
   }
 
-  .banner__imgScooter {
-    margin: 0px 30px;
+  .banner__derecho {
+    /* background: purple; */
+    width: 50%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 
-  .contenedor__carouselPrimeroDesktop {
-    height: 400px;
-    background: salmon;
+  .banner__scooter {
+    max-width: 100%;
+    width: 500px;
+  }
+
+  .carousel__izquierdo {
+    background: gold;
+    width: 50%;
+    height: 550px;
+    margin: 0px 50px;
+    align-self: flex-start;
   }
 
   .icono__search {
-    padding: 0.75rem 12.625rem;
+    width: 600px;
+    padding: 10px;
   }
 
   /* titulo lo mejor en movibilidad sostenible */
@@ -647,10 +720,4 @@ body {
   .carousel__siguiente {
     right: -40px;
   }
-
-  
-  
-  
-  
 }
-

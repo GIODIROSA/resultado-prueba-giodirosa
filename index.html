@@ -5,19 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-     <!-- carousel -->
-     <!-- <link
-     rel="stylesheet"
-     href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css"
-   /> -->
-
    <!-- splide -->
 
    <link rel="stylesheet" href="./assets/splide/splide-core.min.css">
    <link rel="stylesheet" href="./assets/splide/splide-default.min.css">
    <link rel="stylesheet" href="./assets/splide/splide.min.css">
-
-
 
     <!-- style -->
     <link rel="stylesheet" href="./assets/style.css" />
@@ -343,7 +335,7 @@
         </div>
 
         <div class="tituloContenido__titulo">
-          <img src="./assets/img/title/llamado-desktop.jpg" alt="llamado-desktop" width="300">
+          <img src="./assets/img/title/llamado-desktop.jpg" alt="llamado-desktop" width="600">
         </div>
       </section>
 
@@ -359,20 +351,104 @@
       </section>
 
       <!-- banner interno/ primer carousel-scooter -->
-      <section class="contenedor__bannerCarousel">
-        <div class="banner__imgScooter">
-          <img src="./assets/img/banner/banner-interno-desktop.png" alt="banner scooters" >
+      <section class="banner__carousel">
+        <div class="banner__derecho">
+           
+          <img class="banner__scooter" src="./assets/img/banner/banner-interno-desktop.png" alt="scooter">
+
         </div>
 
-        <div class="contenedor__carouselPrimeroDesktop">
+        <div class="carousel__izquierdo">
 
-          
+          <div id="scooterUno" class="splide">
 
-          
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev">
+        
+                <img src="./assets/img/icons/left-arrow-purple.png" alt="" width="30">
+        
+              </button>
+              <button class="splide__arrow splide__arrow--next">
+        
+                <img src="./assets/img/icons/right-arrow-purple.png" alt="" width="30">
+              </button>
+            </div>
+        
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide contenedorImgCarouselUno">
+                  <img
+                  class="img__carouselUno"
+                  src="./assets/img/carousel_central/scooter-1.jpg"
+                  alt="imagen de scooter" 
+                />
 
+                <p class="texto__precioCarouselMedio">
+                  SCOOTER ELÉCTRICO 10´ ZEECLO FENIX
+                </p>
+        
+                <p class="texto__precioCarouselMedio">
+                  $599.000
+                </p>
 
+                <div class="textoVerProducto">
+                  <p class="verProducto">
+                    VER PRODUCTOS
+                  </p>
+                </div>
 
-          
+        
+                </li>
+                <li class="splide__slide contenedorImgCarouselUno">
+                  <img 
+                  class="img__carouselUno"
+                  src="./assets/img/carousel_central/scooter-2.jpg"
+                  alt="imagen de scooter" 
+                />
+        
+                <p class="texto__precioCarouselMedio">
+                  SCOOTER ELÉCTRICO 10´ ZEECLO FENIX
+                </p>
+        
+                <p class="texto__precioCarouselMedio">
+                  $599.000
+                </p>
+
+                <div class="textoVerProducto">
+                  <p class="verProducto">
+                    VER PRODUCTOS
+                  </p>
+                </div>
+        
+        
+                </li>
+                <li class="splide__slide contenedorImgCarouselUno">
+                  <img 
+                  class="img__carouselUno"
+                  src="./assets/img/carousel_central/scooter-3.jpg"
+                  alt="imagen de scooter" 
+                />
+        
+                <p class="texto__precioCarouselMedio">
+                  SCOOTER ELÉCTRICO 10´ ZEECLO FENIX
+                </p>
+        
+                <p class="texto__precioCarouselMedio">
+                  $599.000
+                </p>
+
+                <div class="textoVerProducto">
+                  <p class="verProducto">
+                    VER PRODUCTOS
+                  </p>
+                </div>
+        
+                </li>
+              </ul>
+            </div>
+          </div>
+
+           
         </div>
       </section>
 
@@ -386,13 +462,9 @@
         </div>
       </section>
 
-     
+      <div class="carouselDos">
 
-      <br /><br /><br /><br /><br />
-
-      <div class="ejemplo">
-
-  <div id="prueba" class="splide">
+  <div id="scooterDos" class="splide">
 
     <div class="splide__arrows">
       <button class="splide__arrow splide__arrow--prev">
@@ -408,26 +480,67 @@
 
     <div class="splide__track">
       <ul class="splide__list">
-        <li class="splide__slide">
+        <li class="splide__slide borde">
           <img
+          class="img__carouselDos"
           src="./assets/img/carousel-footer/producto-1.png"
           alt="imagen de scooter" 
         />
 
+        
+        <div class="contenedor__precio">
+          <p class="texto__precioCarouselFooter">
+            $199.990
+          </p>
+        </div>
+
+        <div class="contenedor__loquiero">
+          <p class="texto__loquiero">
+            ¡LO QUIERO!
+          </p>
+        </div>
+
+       
         </li>
-        <li class="splide__slide">
-          <img
+        <li class="splide__slide borde">
+          <img 
+          class="img__carouselDos"
           src="./assets/img/carousel-footer/producto-2.png"
           alt="imagen de scooter" 
         />
 
+        <div class="contenedor__precio">
+          <p class="texto__precioCarouselFooter">
+            $199.990
+          </p>
+        </div>
+
+        <div class="contenedor__loquiero">
+          <p class="texto__loquiero">
+            ¡LO QUIERO!
+          </p>
+        </div>
+
 
         </li>
-        <li class="splide__slide">
-          <img
+        <li class="splide__slide borde">
+          <img class="img__carouselDos"
           src="./assets/img/carousel-footer/producto-3.png"
           alt="imagen de scooter" 
         />
+
+        <div class="contenedor__precio">
+          <p class="texto__precioCarouselFooter">
+            $199.990
+          </p>
+        </div>
+
+        <div class="contenedor__loquiero">
+          <p class="texto__loquiero">
+            ¡LO QUIERO!
+          </p>
+        </div>
+
         </li>
       </ul>
     </div>
@@ -436,14 +549,13 @@
       </div>
 
 
-
+      <br /><br /><br /><br /><br />
      
 
 
 
     </main>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script> -->
-    <!-- splide -->
+   
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="./js/splide.esm.js"></script>

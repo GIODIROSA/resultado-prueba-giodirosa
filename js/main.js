@@ -1,7 +1,7 @@
-new Splide("#prueba", {
+new Splide("#scooterDos", {
   perPage: 3,
   breakpoints: {
-    450: {
+    500: {
       perPage: 1,
     },
   },
@@ -17,12 +17,12 @@ new Splide("#prueba", {
 new Splide("#scooterUno", {
   perPage: 1,
   breakpoints: {
-    450: {
+    500: {
       perPage: 1,
     },
   },
   rewind: true,
-  width: "80%",
+  width: "100%",
   type: "loop",
   autoplay: false,
   focus: "center",
@@ -34,34 +34,5 @@ new Splide("#scooterUno", {
 
 
 
-// window.addEventListener("load", function () {
-//     new Glider(document.querySelector(".carousel__lista"), {
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       draggable: true,
-//       dots: ".carousel__indicadores",
-//       arrows: {
-//         prev: ".carousel__anterior",
-//         next: ".carousel__siguiente",
-//       },
-//       responsive: [
-//         {
-//           // screens greater than >= 775px
-//           breakpoint: 450,
-//           settings: {
-//             // Set to `auto` and provide item width to adjust to viewport
-//             slidesToShow: 1,
-//             slidesToScroll: 1,
-//           },
-//         },
-//         {
-//           // screens greater than >= 1024px
-//           breakpoint: 800,
-//           settings: {
-//             slidesToShow: 4,
-//             slidesToScroll: 4,
-//           },
-//         },
-//       ],
-//     });
-//   });
+
+
