@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
      <!-- carousel -->
-     <link
+     <!-- <link
      rel="stylesheet"
      href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css"
-   />
+   /> -->
+
+   <!-- splide -->
+
+   <link rel="stylesheet" href="./assets/splide/splide-core.min.css">
+   <link rel="stylesheet" href="./assets/splide/splide-default.min.css">
+   <link rel="stylesheet" href="./assets/splide/splide.min.css">
+
+
 
     <!-- style -->
     <link rel="stylesheet" href="./assets/style.css" />
@@ -350,22 +358,19 @@
         </div>
       </section>
 
-      <!-- primer carousel-scooter uno -->
-      <section class="contenedor__firstCarousel">
-        <div class="contenedor__carouselPrimeroScooter"></div>
-
-        <div class="contenedor__background">
-          <div class="backgroundGris"></div>
-        </div>
-      </section>
-
-      <!-- banner interno/ primer carousel-scooter para Desktop  -->
+      <!-- banner interno/ primer carousel-scooter -->
       <section class="contenedor__bannerCarousel">
         <div class="banner__imgScooter">
-          <img src="./assets/img/banner/banner-interno-desktop.png" alt="banner scooters" width="400">
+          <img src="./assets/img/banner/banner-interno-desktop.png" alt="banner scooters" >
         </div>
 
         <div class="contenedor__carouselPrimeroDesktop">
+
+          
+
+          
+
+
 
           
         </div>
@@ -381,135 +386,73 @@
         </div>
       </section>
 
-      <!-- segundo carousel-scooter dos -->
-
-      <section class="contenedor__secondCarousel">
-
-        <div class="carousel">
-          <div class="carousel__contenedor">
-            <button aria-label="Anterior" class="carousel__anterior">
-              <img src="./assets/img/icons/left-arrow-purple.png" alt="" width="30">
-            </button>
-            <!-- 1 -->
-            <div class="carousel__lista">
-              <div class="carousel__elemento">
-                <img
-                  src="./assets/img/carousel-footer/producto-1.png"
-                  alt="imagen de scooter"
-                />
-                <p class="texto__precioCarouselFooter">$199.990</p>
-                <div class="contenedor__loQuiero">
-                  <p class="texto__loQuiero">
-                    ¡LO QUIERO!
-                  </p>
-
-                </div>
-              </div>
-              <!-- 2 -->
-              <div class="carousel__elemento">
-                <img
-                  src="./assets/img/carousel-footer/producto-2.png"
-                  alt="imagen de scooter"
-                />
-                <p class="texto__precioCarouselFooter">$199.990</p>
-                <div class="contenedor__loQuiero">
-                  <p class="texto__loQuiero">
-                    ¡LO QUIERO!
-                  </p>
-
-                </div>
-              </div>
-              <!-- 3 -->
-              <div class="carousel__elemento">
-                <img
-                src="./assets/img/carousel-footer/producto-3.png"
-                alt="imagen de scooter"
-              />
-                <p class="texto__precioCarouselFooter">$199.990</p>
-                <div class="contenedor__loQuiero">
-                  <p class="texto__loQuiero">
-                    ¡LO QUIERO!
-                  </p>
-
-                </div>
-              </div>
-              <!-- 4 -->
-              <div class="carousel__elemento">
-                <img
-                src="./assets/img/carousel-footer/producto-4.png"
-                alt="imagen de scooter"
-              />
-                <p class="texto__precioCarouselFooter">$199.990</p>
-                <div class="contenedor__loQuiero">
-                  <p class="texto__loQuiero">
-                    ¡LO QUIERO!
-                  </p>
-
-                </div>
-              </div>
-              <!-- 5 -->
-              <div class="carousel__elemento">
-                <img
-                src="./assets/img/carousel-footer/producto-5.png"
-                alt="imagen de scooter"
-              />
-                <p class="texto__precioCarouselFooter">$199.990</p>
-                <div class="contenedor__loQuiero">
-                  <p class="texto__loQuiero">
-                    ¡LO QUIERO!
-                  </p>
-
-                </div>
-              </div>
-              <!-- 6 -->
-              <div class="carousel__elemento">
-                <img
-                src="./assets/img/carousel-footer/producto-6.png"
-                alt="imagen de scooter" 
-              />
-                <p class="texto__precioCarouselFooter">$199.990</p>
-                <div class="contenedor__loQuiero">
-                  <p class="texto__loQuiero">
-                    ¡LO QUIERO!
-                  </p>
-
-                </div>
-              </div>
-              <!-- 7 -->
-              <div class="carousel__elemento">
-                <img
-                src="./assets/img/carousel-footer/producto-7.png"
-                alt="imagen de scooter" 
-              />
-                <p class="texto__precioCarouselFooter">$199.990</p>
-
-                <div class="contenedor__loQuiero">
-                  <p class="texto__loQuiero">
-                    ¡LO QUIERO!
-                  </p>
-
-                </div>
-              </div>
-             
-            </div>
-    
-            <button aria-label="Siguiente" class="carousel__siguiente">
-              <img src="./assets/img/icons/right-arrow-purple.png" alt="" width="30">
-            </button>
-          </div>
-    
-          <!-- <div role="tablist" class="carousel__indicadores"></div> -->
-        </div>
-        
-
-        
-        
-      </section>
-      
+     
 
       <br /><br /><br /><br /><br />
+
+      <div class="ejemplo">
+
+  <div id="prueba" class="splide">
+
+    <div class="splide__arrows">
+      <button class="splide__arrow splide__arrow--prev">
+
+        <img src="./assets/img/icons/left-arrow-purple.png" alt="" width="30">
+
+      </button>
+      <button class="splide__arrow splide__arrow--next">
+
+        <img src="./assets/img/icons/right-arrow-purple.png" alt="" width="30">
+      </button>
+    </div>
+
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img
+          src="./assets/img/carousel-footer/producto-1.png"
+          alt="imagen de scooter" 
+        />
+
+        </li>
+        <li class="splide__slide">
+          <img
+          src="./assets/img/carousel-footer/producto-2.png"
+          alt="imagen de scooter" 
+        />
+
+
+        </li>
+        <li class="splide__slide">
+          <img
+          src="./assets/img/carousel-footer/producto-3.png"
+          alt="imagen de scooter" 
+        />
+        </li>
+      </ul>
+    </div>
+  </div>
+
+      </div>
+
+
+
+     
+
+
+
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
-    <script src="main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script> -->
+    <!-- splide -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./js/splide.esm.js"></script>
+    <script src="./js/splide.js"></script>
+    <script src="./js/splide.min.js"></script>
+    <!-- script -->
+    <script src="./js/main.js"></script>
+
+
+
   </body>
 </html>
